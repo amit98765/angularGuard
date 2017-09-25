@@ -1,8 +1,8 @@
 import { CanDeactivate } from '@angular/router';
-
-
+import { Injectable } from '@angular/core';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
+@Injectable()
 export class UnsavedChangesGuard implements CanDeactivate<ProductDetailComponent>{
 
     canDeactivate(component: ProductDetailComponent) {
@@ -12,4 +12,4 @@ export class UnsavedChangesGuard implements CanDeactivate<ProductDetailComponent
         else
             return true;
     }
-}
+} 
