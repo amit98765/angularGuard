@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 
+import { LoginGuard } from './loginGuard';
+import { UnsavedChangesGuard } from './unsavedChangesGuard';
 
 const routes: Routes = [
     { path: 'login', component: LoginComponent },
